@@ -29,6 +29,8 @@ urlpatterns = [
     path('riddle/',view.riddle,name="riddlehome"),
     path('fitgain/',view.fitgain,name="gain"),
     path('fitloss/',view.fitloss,name="loss"),
+    path('todo/',view.todo,name="todolist"),
+    path('calendar/',view.calender,name="calendar"),
 
     
 

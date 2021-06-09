@@ -48,5 +48,11 @@ def fitgain(request):
 def fitloss(request):
      return render(request, "fitness_loss.html")
 
+def todo(request):
+     return render(request, "planner_todo.html")
 
+def calender(request):
+     return render(request, "planner_calendar.html")   
+     
+       
 

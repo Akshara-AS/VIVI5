@@ -1180,7 +1180,7 @@ section {
 
 .team::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   right: 0;
