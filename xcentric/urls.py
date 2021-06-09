@@ -26,8 +26,13 @@ urlpatterns = [
     path('fit/',view.fit,name="fitnesshome"),
     path('planner/',view.plan,name="plannerhome"),
     path('diary/',view.diary,name="diaryhome"),
-    path('riddle/',view.riddle,name="riddlehome")
+    path('riddle/',view.riddle,name="riddlehome"),
+    path('fitgain/',view.fitgain,name="gain"),
+    path('fitloss/',view.fitloss,name="loss"),
+    path('todo/',view.todo,name="todolist"),
+    path('calendar/',view.calender,name="calendar"),
 
+    
 
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

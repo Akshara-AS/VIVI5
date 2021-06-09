@@ -42,6 +42,17 @@ def diary(request):
 def riddle(request):
     return render(request, "riddle_home.html")        
 
+def fitgain(request):
+     return render(request, "fitness_gain.html")
 
+def fitloss(request):
+     return render(request, "fitness_loss.html")
 
+def todo(request):
+     return render(request, "planner_todo.html")
+
+def calender(request):
+     return render(request, "planner_calendar.html")   
+     
+       
 
