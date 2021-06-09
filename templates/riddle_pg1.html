@@ -60,9 +60,9 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="riddle_home.html">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="{% url 'riddlehome' %}">Home</a></li>
 
-                    <li><a class="nav-link scrollto" href="riddle_home.html">Steps</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'riddlehome' %}">Steps</a></li>
 
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -145,11 +145,11 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>
                         <center><B>
-                                <FONT FACE="LUCIDA HANDWRITING" COLOR="MAROON"> RIDLLE ME REE!!</FONT>
+                                <FONT FACE="LUCIDA HANDWRITING" COLOR="MAROON"> RIDDLE ME REE!!</FONT>
                             </B></center>
                     </h2>
                     <ol>
-                        <li><a href="riddle_pg3.html">Next page</a></li>
+                        <li><a href="{% url 'riddle2pg' %}">Next page</a></li>
 
                     </ol>
                 </div>
@@ -1622,12 +1622,12 @@
                                                                                                                                                             </p>
                                                                                                                                                         </DIV>
                                                                                                                                                         <BR>
-                                                                                                                                                        <a href="riddle_pg1.html"
+                                                                                                                                                        <a href="{% url 'riddle1pg' %}"
                                                                                                                                                             class="book-a-table-btn scrollto">PREVIOUS
                                                                                                                                                             PAGE</a>
 
 
-                                                                                                                                                        <a href="riddle_pg3.html"
+                                                                                                                                                        <a href="{% url 'riddle3pg' %}"
                                                                                                                                                             class="book-a-table-btn scrollto">NEXT
                                                                                                                                                             PAGE</a>
 
