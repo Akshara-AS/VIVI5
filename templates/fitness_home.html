@@ -7,6 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Fitness - VIVI5</title>
+  <link rel="icon" href="{% static '/images/logo.svg' %}" type="image/x-icon type">
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Google Fonts -->
@@ -36,9 +37,7 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <div class="logo me-auto">
-        <h1><a href="{%  url 'home' %}">VIVI5</a></h1>
-      </div>
+      <h1 class="logo me-auto me-lg-0"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -293,7 +292,7 @@
   <script src="{% static 'fitness/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static/fitness/main.js' %}"></script>
+  <script src="{% static 'fitness/main.js' %}"></script>
 
 </body>
 </html>

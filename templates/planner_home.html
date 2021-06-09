@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Planner - VIVI5</title>
+  <link rel="icon" href="{% static '/images/logo.svg' %}" type="image/x-icon type">
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Google Fonts -->
@@ -21,6 +22,8 @@
   <link href="{% static 'planners/styles.css' %}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
@@ -35,9 +38,7 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <div class="logo me-auto">
-        <h1><a href="{%  url 'home' %}">VIVI5</a></h1>
-      </div>
+      <h1 class="logo me-auto me-lg-0"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
