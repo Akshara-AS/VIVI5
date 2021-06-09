@@ -1198,7 +1198,7 @@ section {
 }
 
 .team .member:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .team .member .member-info {
@@ -1212,6 +1212,8 @@ section {
   color: #37517e;
   font-family:  "Poppins", sans-serif;
 }
+
+
 
 .team .member span {
   display: block;
