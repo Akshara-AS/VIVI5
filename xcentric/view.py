@@ -53,6 +53,15 @@ def todo(request):
 
 def calender(request):
      return render(request, "planner_calendar.html")   
-     
-       
 
+def entry(request):
+     return render(request, "diary_page.html")        
+
+def riddle1(request):
+    return render(request, "riddle_pg1.html")
+
+def riddle2(request):
+    return render(request, "riddle_pg2.html")
+
+def riddle3(request):
+    return render(request, "riddle_pg3.html")    
