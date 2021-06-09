@@ -75,9 +75,9 @@
                 <span class='px-2 text-lg lg:text-xl' v-bind:class='item.isDone ? "line-through opacity-50 text-blue-600" : "text-teal-700"' >{{item.text}}</span>
                 <div class="flex">
                     <button class="px-2 items-center text-blue-600 focus:outline-none " @click='toggleDone(item)'>
-                        <!--<i aria-hidden="true" class="material-icons">
+                        <i aria-hidden="true" class="material-icons">
                             {{ item.isDone ? 'check_box' : 'check_box_outline_blank' }}
-                        </i>-->
+                        </i>
                     </button>
                     <button class="px-2 text-red-500 focus:outline-none" @click='deleteItem(item)'>
                         <i aria-hidden="true" class="material-icons">delete</i>
