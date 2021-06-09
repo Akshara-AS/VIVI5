@@ -31,6 +31,8 @@ urlpatterns = [
     path('fitloss/',view.fitloss,name="loss"),
     path('todo/',view.todo,name="todolist"),
     path('calendar/',view.calender,name="calendar"),
+    path('entry/',view.entry,name="diary"),
+    
 
     
 

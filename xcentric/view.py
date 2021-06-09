@@ -53,6 +53,8 @@ def todo(request):
 
 def calender(request):
      return render(request, "planner_calendar.html")   
-     
-       
+
+def entry(request):
+     return render(request, "diary_page.html")        
+
 
