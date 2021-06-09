@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +20,15 @@
     rel="stylesheet"> 
 
   <!-- Vendor CSS Files -->
-  <link href="static/diary/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="static/diary/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/diary/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/diary/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/diary/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/diary/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'diary/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'diary/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'diary/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'diary/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'diary/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'diary/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/static/diary/styles.css" rel="stylesheet">
+  <link href="{% static 'diary/styles.css' %}" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -54,7 +55,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="main_home.html">VIVI5</a></h1>
+        <h1><a href="{%  url 'home' %}">VIVI5</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -701,14 +702,14 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/diary/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/diary/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/diary/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/diary/vendor/php-email-form/validate.js"></script>
-  <script src="static/diary/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{% static 'diary/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'diary/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'diary/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'diary/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'diary/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="static/diary/main.js"></script>
+  <script src="{% static 'diary/main.js' %}"></script>
 
 </body>
 
