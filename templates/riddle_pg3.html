@@ -55,17 +55,13 @@
     <header id="header" class="fixed-top d-flex align-items-center ">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<<<<<<< HEAD
-           <h1 class="logo me-auto me-lg-0"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
-=======
             <h1 class="logo me-auto me-lg-0" style=" font-family: 'Architects Daughter', cursive; font-size: 28px; letter-spacing: 3px;"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
->>>>>>> dcb79dd7b167dff00de033b14ebaca396cc3d5fe
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="riddle_home.html">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="{% url 'riddlehome' %}">Home</a></li>
 
-                    <li><a class="nav-link scrollto" href="riddle_home.html">Steps</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'riddlehome' %}">Steps</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -2009,14 +2005,14 @@
                                                                                                                                                                 </p>
                                                                                                                                                             </DIV>
 
-                                                                                                                                                            <a href="riddle_pg2.html"
+                                                                                                                                                            <a href="{% url 'riddle2pg' %}"
                                                                                                                                                                 class="book-a-table-btn scrollto">PREVIOUS
                                                                                                                                                                 PAGE</a>
                                                                                                                                                             <STYLE>
                                                                                                                                                                 body {
                                                                                                                                                                     height: 100%;
                                                                                                                                                                     width: 100%;
-                                                                                                                                                                    background-image: url("https://images.unsplash.com/photo-1518014179319-21e9e8139b05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGJ1YmJseSUyMGJyaWdodCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+                                                                                                                                                                    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt34kL6mTCUu-DdEW0lXAQnLtcHe-Gc_Niqw&usqp=CAU");
                                                                                                                                                                     background-repeat: no-repeat;
                                                                                                                                                                     background-size: cover;
                                                                                                                                                                 }

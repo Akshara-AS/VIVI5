@@ -1,128 +1,30 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Planner-Todo - VIVI5</title>
-  <link rel="icon" href="{% static '/images/logo.svg' %}" type="image/x-icon type">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.5.2/tailwind.min.css'>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'planners/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  <link href="{% static 'planners/styles.css' %}" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="/static/planners/todo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-
-   <!-- ======= Top Bar ======= -->
-   <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+  <div class="wrapper">
+    <header>Todo List</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
     </div>
-  </section>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <h1 class="logo me-auto me-lg-0"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'plannerhome' %}">Home</a></li>
-         
-          
-        </ul>
-  
-    
-
-      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
     </div>
-  </header><!-- End Header -->
-
-<!-- partial:index.partial.html -->
-<body class="bg-gray-200">
-    
-    <div class="p-4 max-w-xl mx-auto" id='app'>
-        <div class="my-3 rounded md:rounded-lg container mx-auto bg-teal-400 shadow-xl">
-        <div class="flex mx-auto border-b w-3/5 justify-center text-3xl lg:text-5xl md:text-5xl sm:text-4xl tracking-wider font-light text-gray-100">
-            To-do List
-        </div>
-        <form name="newform" class="flex flex-col ml-6 sm:ml-12 md:ml-16 lg:ml-16  py-4" v-on:submit.prevent="addItem">
-            <label for="newitem" class="text-2xl text-gray-100 font-light">Add to the list</label>
-            <div class="flex">
-                <input type="text" required v-model="todo" class="px-2 py-1 sm:py-0 md:py-2 lg:py-2 focus:outline-none border shadow-lg">
-                <button class="border shadow-lg text-indigo-600 mx-2 bg-teal-200 rounded text-sm uppercase px-1 sm:px-2 md:px-2 lg:px-3 py-1 sm:py-0 md:py-2 lg:py-2 hover:opacity-75" type="submit">
-                    Add item
-                </button>
-            </div>
-        </form>
-        
-        <ul class='w-11/12 py-4 mx-auto'>
-            <li class='flex justify-between text-white bg-teal-200 p-2 my-1' v-for='item in todos'>
-                <span class='px-2 text-lg lg:text-xl' v-bind:class='item.isDone ? "line-through opacity-50 text-blue-600" : "text-teal-700"' >{{item.text}}</span>
-                <div class="flex">
-                    <button class="px-2 items-center text-blue-600 focus:outline-none " @click='toggleDone(item)'>
-                        <i aria-hidden="true" class="material-icons">
-                            {{ item.isDone ? 'check_box' : 'check_box_outline_blank' }}
-                        </i>
-                    </button>
-                    <button class="px-2 text-red-500 focus:outline-none" @click='deleteItem(item)'>
-                        <i aria-hidden="true" class="material-icons">delete</i>
-                    </button>
-                </div>
-            </li>
-        </ul>
-        <div class="flex mx-auto justify-center py-4 text-white font-light text-xl" v-if='!todos.length'>Your todo list is empty.</div>
-    </div>
-    </div>
-    <style>
-        body {
-            height: 100%;
-            width: 100%;
-            background-image: url("https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-   
-    </style>
+  </div>
 
 
-
-</body>
-
-    
-
-
-  <!-- Vendor JS Files -->
-  <script src="{% static 'planners/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'planners/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'planners/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'planners/vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'planners/vendor/swiper/swiper-bundle.min.js' %}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static 'planners/main.js' %}"></script>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.24.0/vuedraggable.min.js'></script>
-<script  src="{% static 'planners/script.js' %}"></script>
+  <script src="/static/planners/todo.js"></script>
 
 </body>
 </html>
-
-
