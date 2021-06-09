@@ -68,9 +68,9 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="riddle_home.html">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="{% url 'riddlehome' %}">Home</a></li>
 
-                    <li><a class="nav-link scrollto" href="riddle_home.html">Steps</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'riddlehome' %}">Steps</a></li>
 
 
 
@@ -158,7 +158,7 @@
                             </B></center>
                     </h2>
                     <ol>
-                        <li><a class="nav-link scrollto" href="riddle_pg2.html">Next page</a></li>
+                        <li><a href="{% url 'riddle2pg' %}">Next page</a></li>
 
                     </ol>
                 </div>
@@ -1510,8 +1510,12 @@
                                                                                                                                                             </p>
                                                                                                                                                         </DIV>
                                                                                                                                                         <BR>
+                                                                                                                                                        <a href="{% url 'riddle1pg' %}"
+                                                                                                                                                            class="book-a-table-btn scrollto">PREVIOUS
+                                                                                                                                                            PAGE</a>
 
-                                                                                                                                                        <a href="riddle_pg2.html"
+
+                                                                                                                                                        <a href="{% url 'riddle3pg' %}"
                                                                                                                                                             class="book-a-table-btn scrollto">NEXT
                                                                                                                                                             PAGE</a>
 
