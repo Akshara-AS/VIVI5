@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +17,13 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/fitness/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="static/fitness/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/fitness/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/fitness/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/fitness/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/fitness/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="static/fitness/styles.css" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/styles.css' %}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
 
@@ -331,23 +333,7 @@
         </div>
       </div>
     </section>
-
-
-
    
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
     <!-- End About Section -->
 
      <!-- ======= Footer ======= -->
@@ -361,14 +347,14 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  <!-- Vendor JS Files -->
- <script src="static/fitness/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="static/fitness/vendor/glightbox/js/glightbox.min.js"></script>
- <script src="static/fitness/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- <script src="static/fitness/vendor/php-email-form/validate.js"></script>
- <script src="static/fitness/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="{% static 'fitness/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+ <script src="{% static 'fitness/vendor/glightbox/js/glightbox.min.js' %}"></script>
+ <script src="{% static 'fitness/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+ <script src="{% static 'fitness/vendor/php-email-form/validate.js' %}"></script>
+ <script src="{% static 'fitness/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
  <!-- Template Main JS File -->
- <script src="static/fitness/main.js"></script>
+ <script src="{% static 'fitness/main.js' %}"></script>
 
 
 </body>
