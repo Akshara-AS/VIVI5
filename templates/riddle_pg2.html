@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,15 +29,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <!-- Vendor CSS Files -->
-    <link href="static/riddles/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="static/riddles/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/riddles/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="static/riddles/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="static/riddles/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="static/riddles/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'riddles/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="static/riddles/styles.css" rel="stylesheet">
+    <link href="{% static 'riddles/styles.css' %}" rel="stylesheet">
 
 
 </head>
@@ -55,9 +57,9 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="riddle_home.html">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="{% url 'riddlehome' %}">Home</a></li>
 
-                    <li><a class="nav-link scrollto" href="riddle_home.html">Steps</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'riddlehome' %}">Steps</a></li>
 
                     <li><a class="nav-link scrollto" href="#gallery">Bright-side</a></li>
 
@@ -1776,14 +1778,14 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="static/riddles/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="static/riddles/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="static/riddles/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="static/riddles/vendor/php-email-form/validate.js"></script>
-    <script src="static/riddles/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'riddles/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'riddles/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'riddles/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'riddles/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'riddles/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
     <!-- Template Main JS File -->
-    <script src="static/riddles/main.js"></script>
+    <script src="{% static 'riddles/main.js' %}"></script>
 
 </body>
 

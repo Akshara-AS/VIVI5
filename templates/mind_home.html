@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +29,7 @@
   <link href="{% static 'mind/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{5static/mind/styles.css" rel="stylesheet">
+  <link href="{% static 'mind/styles.css' %}" rel="stylesheet">
 
  
 </head>
@@ -597,14 +598,6 @@
             </div>
           </div>
 
-
-
-
-
-
-
-
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="https://www.wishesmsg.com/wp-content/uploads/Motivational-messages-About-Life.jpg"
@@ -674,20 +667,16 @@
   <!-- Vendor JS Files -->
 
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <script src="/static/mind/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/static/mind/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/static/mind/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/static/mind/vendor/php-email-form/validate.js"></script>
-  <script src="/static/mind/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="{% static 'mind/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mind/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'mind/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mind/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'mind/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="/static/mind/script.js"></script>
+  <script src="{% static 'mind/script.js' %}"></script>
 
 </body>
 

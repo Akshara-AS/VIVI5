@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -284,14 +285,14 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/fitness/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/fitness/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/fitness/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/fitness/vendor/php-email-form/validate.js"></script>
-  <script src="static/fitness/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{% static 'fitness/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'fitness/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'fitness/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'fitness/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'fitness/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="static/fitness/main.js"></script>
+  <script src="{% static 'fitness/main.js' %}"></script>
 
 </body>
 </html>
