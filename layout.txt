@@ -1,4 +1,3 @@
-
 -------------- VIVI5 -----------------
 
       VIVI5 HOME  
@@ -10,3 +9,17 @@
        4. DIARY 
        5. RIDDLES   
       
+  Client  :   Python             
+              Html              
+              Css              
+              Js
+              jQuery
+              Bootstrap
+  
+  API      :  django
+
+  Backend  :  sqlite
+
+  Infra    :  Docker 
+
+  Services :  Github
