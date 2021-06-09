@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fitness - VIVI5</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'fitness/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fitness/styles.css'  %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="{%  url 'home' %}">VIVI5</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#why-us" class="book-a-table-btn scrollto">Begin Now!</a>
+
+      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-background"><img src="https://images.pexels.com/photos/4397831/pexels-photo-4397831.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width: 100%;" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Scuplt Your Body !</span> Become Fit !!!</h2>
+                <p class="animate__animated animate__fadeInUp">Staying healthy physically can help you stay healthy emotionally too !!!</p>
+                <div>
+                  
+                  <a href="#why-us" class="btn-book animate__animated animate__fadeInUp scrollto">Begin Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-background"><img src="https://images.pexels.com/photos/6453974/pexels-photo-6453974.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width: 100%;" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Lose Weight in Healthy Manner</h2>
+                <p class="animate__animated animate__fadeInUp">Keep a food log</p>
+                <div>
+                  
+                  <a href="#why-us" class="btn-book animate__animated animate__fadeInUp scrollto">Begin Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
+            <div class="carousel-background"><img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width: 100%;" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Gain Weight in Healthy Manner</h2>
+                <p class="animate__animated animate__fadeInUp">Regularly check the scale.</p>
+                <div>
+                  <a href="#why-us" class="btn-book animate__animated animate__fadeInUp scrollto">Begin Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("https://i.pinimg.com/originals/7a/3d/a4/7a3da4644fbe3fdf7dd60368e76a61ef.gif");'>
+            
+          </div>
+   
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" >
+            
+            <div class="content">
+              <h3><strong>Trim Your Body!</strong> Looking for a healthy eating habit? </h3>
+              <p class="fst-italic">
+                Staying healthy physically can help you stay healthy emotionally too. If you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness.
+              </p>
+
+          
+              <ul>
+                <li><i class="bx bx-check-double"></i> We have designed fitness page for different types of body type. </li>
+                <li><i class="bx bx-check-double"></i> Included simple and easy to follow plans </li>
+                <li><i class="bx bx-check-double"></i> Simply following the given tips regularly would make a huge difference</li>
+              </ul>
+              <p>
+                A healthy eating plan gives your body the nutrients it needs every day while staying within your daily calorie goal for weight loss. A healthy eating plan also will lower your risk for heart disease and other health conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Whu Us Section ======= -->
+   
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title" style="padding-bottom: 60px;">
+          <h2>Start today <span>Make your body fit</span></h2>
+        </div>
+
+        <div class="row">
+         <div class="row justify-content-around">
+          <div class="col-lg-4">
+            <a href="/fitness_gain.html">
+            <div class="box">
+              <span>01</span>
+              <h4>Gain Weight </h4>
+              <p>This is for people who are under weight. Gain weight in a healthy manner. </p>
+              <p style="color: rgb(95, 85, 85);"> Click Here !!</p>
+            </div> 
+          </a>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" > 
+            <a href="/fitness_loss.html">
+            <div class="box" >
+              <span>02</span>
+              <h4>Lose Weight</h4>
+              <p>This is for people being overweight. Lose weight faster in a healthy manner.</p>
+              <p style="color: rgb(95, 85, 85);"> Click Here !!</p>
+            </div>
+          </div>
+        </a>
+        </div>
+        </div>
+
+      </div>
+    </section>
+    
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2> Create <span>Healthy Habbits</span></h2>  
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/6977372/pexels-photo-6977372.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/6977372/pexels-photo-6977372.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/4712007/pexels-photo-4712007.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/4712007/pexels-photo-4712007.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/802417/pexels-photo-802417.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/802417/pexels-photo-802417.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/53404/scale-diet-fat-health-53404.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/53404/scale-diet-fat-health-53404.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://images.pexels.com/photos/1161682/pexels-photo-1161682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="gallery-lightbox">
+                <img src="https://images.pexels.com/photos/1161682/pexels-photo-1161682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>VIVI5</h3>
+      <p>MIND . FITNESS . PLANNERS . DIARY . RIDDLES</p>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/fitness/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/fitness/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/fitness/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/fitness/vendor/php-email-form/validate.js"></script>
+  <script src="static/fitness/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/fitness/main.js"></script>
+
+</body>
+</html>

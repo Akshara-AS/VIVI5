@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mind - VIVI5</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+   <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+   <link href="{% static 'mind/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mind/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mind/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'mind/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mind/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mind/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{5static/mind/styles.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+ 
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="{%  url 'home' %}">VIVI5</a></h1>
+       
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+         
+          <li><a class="nav-link scrollto" href="#specials">Benefits</a></li>
+          <li><a class="nav-link scrollto" href="#events">Playlists</a></li>
+         
+          <li><a class="nav-link scrollto" href="#gallery">Quotes</a></li>
+          
+         
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(https://c4.wallpaperflare.com/wallpaper/17/170/572/relax-forest-peace-rain-wallpaper-preview.jpg
+          );  background-size: cover;
+          background-position: relative;
+          background-repeat: no-repeat;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>MIND</span></h2>
+                <p class="animate__animated animate__fadeInUp">Motivation reflects something unique about each one of us
+                  and allows us to gain valued outcomes like improved performance, enhanced well-being, personal growth,
+                  or a sense of purpose. Motivation is a pathway to change our way of thinking, feeling, and behaving.
+                </p>
+                <div>
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">START</a>
+                  <!--<a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(https://images.unsplash.com/photo-1551845728-6820a30c64e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGFwcGluZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80); background-size: cover;
+          background-position: relative;
+          background-repeat: no-repeat;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>MIND</span> Inspires you</h2>
+                <p class="animate__animated animate__fadeInUp">Without motivation in life, it’s hard to strive for
+                  success and achieve internal happiness. So, to help you reach your goal of self-love and satisfaction,
+                  we’ve made this application to make you to achieve your eternal happiness.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">START</a>
+                  <!--<a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(https://images.unsplash.com/photo-1559677437-62c20d42dd27?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFwcGluZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80); background-size: cover;
+          background-position: relative;
+          background-repeat: no-repeat;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>MIND</span> Enrich your life</h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Life is so busy, hectic and filled with challenges. There are also myriad opportunities for personal
+                  enrichment, satisfaction, friendship, love, finding purpose and doing good for others. We help you to
+                  find your peace and happiness.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">START</a>
+                  <!--<a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid" style="padding-left: 40px;">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box"
+            style='background-image: url("https://media0.giphy.com/media/iYtNyLvcefcrVYZFxL/giphy.gif"); border-radius:40px'>
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3 style="font-weight: 800px;
+              font-size: 40px;
+              color: #ffb03b;
+              font-family: 'Architects Daughter', cursive;"><strong>Motivate</strong> Yourself !</h3><br>
+              <p>
+                Motivation becomes the fuel for the life which helps you achieve your dreams. It's a powerful, yet
+                tricky beast. Sometimes it is really easy to get motivated, and you find
+                yourself wrapped up in a whirlwind of excitement. Other times, it is nearly impossible to figure out how
+                to motivate yourself and you're trapped in a death spiral of procrastination.
+              </p>
+              <p class="fst-italic">
+                We provide best ideas and
+                speeches of eminent speakers on how to get and stay motivated.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Discover life changing advice curated by the top
+                  content creators.</li>
+                <li><i class="bx bx-check-double"></i> Listen to new speeches, interviews & playlists.</li>
+                <li><i class="bx bx-check-double"></i> Access playlist covering anxiety, focus, stress and more.</li>
+              </ul>
+              <p>
+                Nobody can stay motivated until he or she regularly does something to recharge himself with motivation.
+                Successful people have plenty of motivational sources here and there. Whenever they find some time, they
+                nourish themselves with motivation.<br>Do you do it?
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img
+                  src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxODAxNTQ0MjA1/mother-teresa-9504160-1-402.jpg"
+                  class="testimonial-img" alt="">
+                <h3>Mother Teresa</h3>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Spread love everywhere you go. Let no one ever come to you without leaving happier
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://www.whitehouse.gov/wp-content/uploads/2021/01/44_barack_obama.jpg"
+                  class="testimonial-img" alt="">
+                <h3>Barack Obama</h3>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The real test is not whether you avoid this failure, because you won't. It's whether you let it harden
+                  or shame you into inaction, or whether you learn from it; whether you choose to persevere
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUXFxcXFxUXGBcXGBgXFxcXFxgXFxgYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAABAgADBAUGBwj/xAA8EAACAQIEAwUGBAQGAwEAAAAAAQIDEQQSITEFQVEGImFxgRMykaGx8AdCwdEUYnLhIzNDUoKyc5LxFv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDyeRExWSQBkxWKwSYBuCTEQyYBuK2MxAAw36iyQAGuTMNh8NOpJQhFyk3ZJLm+vT1O94J+H8bKWJqX1/y6f0c3+gHBxg3sm/JbGdR4HiJ6xpTt1ys9h4fg8LRuqdKMWtLtZn81o/I2NDFyla0o/H5aKwHiNbs7iYLM6U7aa2tv4PX5GskraPRn0ZDBuV7vfk9Vb78DR9ouxUMRF2ioT5f7G+qtsB4cFSNpxzgNbDStUg0m2lLeLtyv1NVcBrkTBYiYFkQpioYCEAmNYB0RIVDJgOkBkTJcAkAQChkbCxGBGLILFuBLBQIoZgSTEuOxLAV1JWN52d7OTxMk3LJDm92/JfqajDUM84x6v5HqvCqGSEYx0va/6gZ3Zzsjh6TzRi3Jfnbbbf0R0c+HJq9pacru3yMjgVBKNvE6OnQi+QHHwwKbei3/ADK9vK5nYfAq3uq3WNvodPLARfIojw2zun6Aa6MWtE9Pvky1Vrb7N7+JnuhLZ2Zpsfek3o8j9V/YDEx2ApVVJSipQatKLs7p9PvkeNdt+yjwk80bulJ9172vsmepYrFOE737stmtndc/FPU1GKxsa9GpRqJNa2b1s9dV1A8digrQuxtFwqSjtZ2/+eBSmAysFoAWBEhkgRLLAKwpEZEASIIADoEX1+oQKELIIGArEuMgWAMRkiIFwC2VykSbK2wNhwSX+PH72PUcJLvQj/Lf431+R5l2aj/jZntFfN7fQ9IorJKnL+RL4Ad1wado+R0OEqbHK4Cpz3TN5hJAb2M0NcxqTLkA90U1oRejs14ljMebA57GdnIybUX3Xy6eX3yPP+PcJnhcRG93Tlpntp6rfzPVqtaxqeK4eFelKE/R84tbNAeDdq8E4VFLW0l1vszRo7DtTPuShUWWcWrPeMvLW6uvgzj0AxLgRGwHiWORVTHAlwpi3DEB2wEIALsgLEAruB7DWFYCsWwSAC4LhsCwCSFQ7EsBsuB4lxmocptXf35nodermaS5J29PE8ywUIyn3pZVq21v6HccLxibjFu7Ss31d0B3/Z+v3bzdklz2S5tmb/8ArcLDeTtydt/I4XiuKce621GzbNBfOs1PDSnFvLmcp381GNvqB7hwjtJQrpulPVcnozYLH7PzPn3E4PE0GpKDg8qk8rlZfyy6NWPZ+y0/b4JOcdZQ1Wt1K3XkwMvi/a/DYd5akm5NXyrw8TT0O30Kl8lNu29rvSx5ni+BVvar2jsnJpvdrXaz9De8K4DxGEe5Xsku7GUHleq966XK+zA72nxeFdLKmnpdPlcbETsklu3b53/Q1fAsBVXeqU1GotG07wf80eZbxSvbJr/qRXz1+CTA8x/EaTz5Em8kpZmk7JN93M9rp357M4q563xPtPXqVFRpUIU6EnJTc025R7zbaWi0XO/oeSactuXkBEQiQGA8WOmJBDARDRFGiA8USwbgaAGYgLEARCsZoVsCuSCgSAmAWwNkZGwEkKxmxbgPRnlkm9ufk9GbzCVZUpwj1vr13NBc6PhyVWjGW8qWj9P0a+jA9B4ZgqdenFyV38Pj1NlT7Nt6xUEvW/w2NJ2VxKyqNz0jhk1YDkMdwpU0795t2d1y8lodR2MrJ0LdFa3lc0HbGq3OnCLSbbu+WVJvX1sbXse7U2m1fL157gbKnhoTbi4r4IyKPC1DaK9El9DUwxeSXtFO7Uvc01jz82v0Ohp46Mo3vfQDCxVfLF6HB8YoOupQu1aWeOu7TV18/kdpja8Xc53gUE8VfdLPv5AaHtdR/heHyf8AqSy0r+NS7fqoX+J5O4nefi1xfPiY4aPu0Vmk3+apU1b9I2XqcJcAIV+IyBMBoDRFih0BLBSIGwDWAxuQEwFsQb4EAoYCMDAWQrGkKkBBWNYjQFYBmKwIbXgPEY0vaRltOO/ir2+pqSAdxwjGuNnF6aHZYLtBKKR5z2ZrJpwb20XrsdvQwLye1hHO46uP6+ICdqs9WjeLaqXUvG3T4HIYTjGMgskXLo99DosVxDEtu+Ha6JyhH6smAnjU7LBwld3WsWl5vNqB0XYPgk41Via05TeVpQk+6s27S66v4nR4rEqhO1/8OXu+HWN/v5HMU8bxOHv0aFuntYxa81G5nYDHYiq/ZV6Kim/fTUlZfO/oBl4zF5lptuchxjtJUwkVKko55yteWqSSk9PWx1fFEqcXb0+Z5R2vxWapGK5Jv1k9PlFAajGYudWcqlRuU5vNKT5t/fyKUhBgHFZIisCxBTK4DICxMKZXEKAtTILEewB++ZAWRAKGK0OxGgEYEGQACxWOkCSAQDBJkYEaFQzZAMvhWJ9nUT5PR/oek8B4jvG+utvU8saN3gOJyjbrH5oDvsbQlPuvdPfoYNLhFW6ajJ62fIyOE8dhJJtpSXJ6/A6XCdoKa2yyXjZW8GA3B+GzjHWNn1k/mZzpTyub9PIql2hTStZcmv7rY5/jPadWcISu/wAz0Au4/irwvfwS6t/bPNu1uCdLEWu3npUamvLPBO3krHZdn8NUxteMNVHm+kF70vOzSXi0a/8AF7IuI5YpK1GlFryzZV/62A4FDJls8P0+BW6clyAMWI2GJGBIliQiQwEiERjJgWJjiIewDAEzBApkhGx5MruAgURyCgBcWbDJgbAUjRGgsANBiRjxpgCxnOi8kay2vkl4SW1/NWfxMJmfwniPsXK8VOnNZalNuykvB/lmt0/3Avo12ZlLES5SMOthEu9Sl7Sk3aMnpJPfJUX5Zr4NarnapVQNl/EVHfvtJ7pfuZfD8I5yUVd3a0WrbfJdXc1mEi5bJnR4Li9PBpTazVGnlpp6pPTWVu5fa61SvbVgek8Jp0OFYOWIrNZpcla8pL3aVPrbX1beyR4fxzH1MTXqV5+/Uk5tK+iS0XlGKSv4XLeN8brYqr7WvPNL3YRWkIR/204/lj83zbNxw7AOjw+vi5JXrP8AhKF+ak3KvNf8YOKfXMBzUXcdIrpdC5oCezXNFU8MuTsXINgMT+Gl4MSUGt0zOLEBqxkjNnQT5fAqlhLbP0YFKCmRrqBATUgbsgFTK2ixiAVtBARsCCyRGwMA3HUbhjS6liAmSxFEZD5dAMZjKIbajNWAbC15023B76Si1eMl0knv9VyL6mLV7xg11Td0vBPdopivmWKL/LG/Xp8WBfDG1eTyrwVv7gVO7u2231d36mbg+DYqcVKGHqzT2cKcpL0aVn5myh2Wx0d8FXaf8jA5rGQs1bpsek/iPUVPC8NwSsnToRqTS0tKUFBfF+0ZuOwf4aQa9vj6MnNvu0Zu0IpbOUYvvPwbt4HFds+IfxOMr1r91yy0/wDx01kjbwdnL/kBy7VpMtTErrvL72LEALATLIdAOmAYxuOoFN+m3Xr5fuPSrW0YBegyaZKy0v0RTCWqANempLxMJMzovcxcRGzv1AQgtyAK2JYskKBRIDHkBIAKF2WxikWKFkRQAFhGWSixFG71Aamr+RcloRU7ILWgFNgSHpoepYCYanGUlGUnFNpOVr5VfV5V71lyPeuyv4Z4KklUm/4q6jKMp2yLdqUIx0s7re+x4NTR67+EHazK1gq0u6/8iT/LJ7023yb28dOaA9cpUklZKy6IsUSIIHPdvOLfw2CqSTtOa9lT/qmmrr+mOaXofPlWFtEj0f8AFHi/tsQqMXeFBNO2zqStn+CSj55jzuuwNVi1s+j/ALDQRbXV7oow8tPIBrDIKiNFoBQOnoGBY9tgKIzto9hYL6F6ho+pRLdgSiCrC90NSehOYGF7J9CGdbyABgtMVjMVgVMNNEsGmtQMhrRlUJFi1RSlZgPMenESJfBARldSeth7lC6gWR8A5lz08RLsZRYF8UZuEqZXe766fuapUuja8v2MujOS6P6gfRP4e9qP4yhlm/8AGppKf88do1F57Px80Z/bLtDHBYaVTT2ku5Sj1m1v5RXefl4nhHZjj8sLXhWhvF96D0zQfvQfg/qk+Rf257VvHYh1HeFKCy0oO14x5uVtM0mtfJLkBi1sU3q3du7b3bb1u/Ewas1fXfotWa6pjntH4lSrvo/vqBmyu/BeGr+P7GPHuya5PUSM5vkSopKzfL6AZkQZRqexEBVdDxnoCSKgMhSKMRv6IaLFxCAWnsF7gi9CIB7kK/UIGJJWEZbIrYFTuy2K1FjuvMtaswInqIluNNWI0BIIyJKxVSiXTApm7K5XCOhMQyUZMB1EdRCkFIAWGiyJBQFtKorpS0Sau+ib1fhpcvx+FpXThK/O2ZyXg9djFpe8/L9SxAKqaLFFAyhaAhLX05EjAMUAMHLRxe6Y8mUPSfn9UXSAZopmjIT+iFnADHTGk7/MFVWEhUAFxmyvMOgJchLkAxLlcmOxWAIrmXT1SYHG2gkJNANG5JXHQJIB6SLJgggVWBi1nqWU0UyWpdTAuuES48UAYosUQRQ7AWHvP+n9UGMl1BTff1V7JO3VJrT12M3F1YztlT82rPlZP+wGLfUe4JR1JbRgNEiFTBcBMUtL9Nf3LYapFcnfQrw0mu70AyIuxZGRj31LIsAzjoY1SNmZUGCvSvsBgsaItTQLYDXIJcgFIIkZbRV0wKpyFLKsCteIF0NkEEVoho7gWRKa0yxyMWrMBYl0CiMi5AW2HWhXFllwGUx2VxLktAK4Pvv+n9UXxZRlWbroNOEo6NNPxTX1AtlL7QynoUJDPmAykK5EihkgK5SKM3eL3FGNXVtegGSmFFVKd0WXANy2EjHZLgHHrW65r+xjU2NVqXFpyANvBECQCll1L9CEAFQqkQgFvJeQyIQAVTFqfv8AUhAEL4kIBZH7+RYQgDQLvyv0IQC3h3+bH+qH/ZG0497tHyl/2kQgGme/30GmEgCw3XkOvdCQCmRRU2fkyEAqw+3qZKIQB3sUy3IQCqpzK6ZCAMQhAP/Z"
+                  class="testimonial-img" alt="">
+                <h3>Thomas A. Edison</h3>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Many of life's failures are people who did not realize how close they were to success when they gave
+                  up.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="testimonial-img" alt="">
+                <h3>Maya Angelou</h3>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Life is not measured by the number of breaths we take, but by the moments that take our breath away.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="testimonial-img" alt="" style="height: 100px;">
+                <h3>Steve Jobs</h3>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which
+                  is living with the results of other people's thinking.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="font-weight: 800px;
+          font-size: 40px;
+          color: #ffb03b;
+          font-family: 'Architects Daughter', cursive;">Benefits</h2>
+          <p class="fst-italic" style="font-size: 14px; ">If you want to achieve greatness, you need to stop asking for
+            permission. This is
+            why motivation is
+            important in life because it stops asking questions and aligns you to work towards your goals.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">GIVIES YOUR VISION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">TEACHES PERSEVERANCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">OVERCOME INDECISIVENESS</a>
+              </li>
+              <li class="navstyle=" width:100% ; height:100%; padding-left:45px;"-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">MAKES YOU POSITIVE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">STRENGHTENS YOU</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1" style="padding-bottom: 41.1px;">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>“ Vision without action is merely a dream . Action without vision just passes the time. Vision
+                      with action can change the world . ” </h3>
+                    <p class="fst-italic">
+                    </p>
+                    <p>In order to be happy in life, you need to fulfil your dreams. In order to fulfil your dreams, you
+                      must recognize them. It is crucial that you get a vision of what your dreams are and what you
+                      aspire to achieve in life. Self-motivation gives you the much-needed vision in life for a better
+                      clarity.<br><br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://thumbs.gfycat.com/AllCheapDouglasfirbarkbeetle-size_restricted.gif" alt=""
+                      class="img-fluid" style="padding-left:50px ; padding-top:50px;">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>" Perseverance is not a long race ; it is many short races one after the other . "</h3>
+                    <p class="fst-italic"></p>
+                    <p> Motivation helps you strive through setbacks, trials
+                      and fears. Thomas Edison is known for the invention of the light bulb and is noted for this quote,
+                      ‘I have not failed. I’ve just found 10,000 ways that won’t work.’ The famous inventor also
+                      inspired this thought, ‘Our greatest weakness lies in giving up. The most certain way to succeed
+                      is always to try just one more time.’ Motivation will teach you to persevere when reality tells
+                      you to give up.<br><br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://thumbs.gfycat.com/PhonyLegalIberianemeraldlizard-size_restricted.gif" alt=""
+                      class="img-fluid" style="padding-left: 50px; padding-top:50px; height:270px; ">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3" style="padding-bottom: 41.1px;">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>“ Now is definitely the best time to start , though Yesterday would have beaten it easily . ”
+                    </h3>
+                    <p class="fst-italic"></p>
+                    <p>Indecisiveness and the inability to take timely decisions can actually cost you greatly in life.
+                      It is important that you do not allow indecisiveness to overcome your success. Self-motivation
+                      plays a pivotal role in that regard as it helps you overcome petty indecisiveness and gives you
+                      the power to make important decisions wisely and at the right time.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://www.playeurope-project.eu/wp-content/uploads/2019/05/image2.gif" alt=""
+                      class="img-fluid" style="width:250px; ">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4" style="padding-bottom: 33.6px;">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>“ A positive attitude causes a chain of reaction of positive thoughts, events and outcomes. It
+                      is a catalyst and it sparks extraordinary results . ” </h3>
+                    <p class="fst-italic"></p>
+                    <p>Self-motivation makes you a positive, open-minded and much happier person in general. You
+                      learn to see the good in everything and only embrace the good from the bad. There is nothing that
+                      can bring you down any longer because you don’t allow the dark elements to affect you the same
+                      way.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://i.pinimg.com/originals/60/08/20/600820c302000e35b171af5f99a7a71d.gif" alt=""
+                      class="img-fluid" style="padding-left: 50px; height:280px;">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5" style="padding-bottom: 64.8px;">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>“ Life is about accepting the challenges along the way , choosing to keep moving forward, and
+                      savoring the journey . ”</h3>
+                    <p class="fst-italic"></p>
+                    <p>There are many times when life throws multiple challenges upon you. It is difficult to take on
+                      these challenges most particularly when you are not mentally prepared. Self-motivation pushes you
+                      from within to stay encouraged and be brave enough to take up all such challenges.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://campbellms.typepad.com/.a/6a00d83467970453ef01b7c6ffdc3a970b-pi" alt=""
+                      class="img-fluid" style="padding-left: 50px; padding-top:120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="font-weight: 800px;
+          font-size: 40px;
+          color: #ffb03b;
+          font-family: 'Architects Daughter', cursive;"><span>Playlists</span></h2>
+          <p style="color: rgb(168, 167, 167);">!! Click the image for videos !!</p>
+        </div>
+        <br>
+        <div class="events-slider swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+
+                <div class="col-lg-6">
+                  <a href="https://www.youtube.com/watch?v=YuNLNeIorJw">
+                    <img
+                      src="https://st2.depositphotos.com/2084857/9517/i/950/depositphotos_95176994-stock-photo-love-yourself-inscription.jpg"
+                      class="img-fluid" alt="" style="height: 400px; padding-top:20px; padding-left:50px;">
+                  </a>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 style="font-family: 'Architects Daughter', cursive;">SELF LOVE</h3>
+                  <div class="price">
+                    <p><span>" Love yourself first and everything else falls into line. You really have to love yourself
+                        to get anything done in this world . "</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Self-love can benefit us in various aspects of life. It might be the best investment because a
+                    little effort every day can result in a huge improvement in our holistic health.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i>Stronger Motivation </li>
+                    <li><i class="bi bi-check-circle"></i>Higher Level of Satisfaction</li>
+                    <li><i class="bi bi-check-circle"></i>Less Stress and Anxiety </li>
+                  </ul>
+                  <p>
+                    Love is the only thing that keeps us going and makes us less robotic in a world which requires us to
+                    work, think and act like we are programmed bots. Everyone needs love and we spend most of our energy
+                    on loving others.
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <a href="https://www.youtube.com/watch?v=tbnzAVRZ9Xc">
+                    <img src="https://cdn.earlytorise.com/wp-content/uploads/2013/06/Dream-Big.jpg" class="img-fluid"
+                      alt="" style="height: 400px; padding-top:20px; width:500px; padding-left:50px;">
+                  </a>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 style="font-family: 'Architects Daughter', cursive;">DREAM BIG</h3>
+                  <div class="price">
+                    <p><span>“ Dream big – dream very big. Work hard – work very hard. And after you’ve done all you
+                        can, you stand, wait, and fully surrender .”</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Dreaming big means having the mental freedom to think about what you really want out of life and
+                    forget about all the reasons why you can’t make it a reality.Those who dare to dream often have a
+                    broader perspective in life and can turn the improbable to the possible.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Thoughts are things, what you think, you become</li>
+                    <li><i class="bi bi-check-circle"></i> Your focus is altered and you notice different things
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> When you fail, you can recover quicker</li>
+                  </ul>
+                  <p>
+                    Knowing that life is short, you should try to maximize the amount of positive experiences you get
+                    out of it. After all, you don’t get to restart your life over again once you reach the finish.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <a href="https://www.youtube.com/watch?v=eBSeCp__xhI">
+                    <img src="https://miro.medium.com/max/719/0*fB8IQ532Zl25HI4u.jpg" class="img-fluid" alt=""
+                      style="height: 400px; padding-top:20px; width:450px; padding-left:50px;">
+                  </a>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 style="font-family: 'Architects Daughter', cursive;">FOCUS ON YOURSELF</h3>
+                  <div class="price">
+                    <p><span>" Focus on yourself - do what you want , when you want, without having to consider anyone
+                        else's agenda . "</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    One of the best ways to keep growing as a person is by focusing on self-improvement, and doing more
+                    for yourself on a regular basis.Focusing on yourself isn’t selfish. It’s an act of self-love.It's
+                    not selfish to love yourself, take care of yourself, and to make your happiness a priority. It's
+                    necessary.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Spend time doing things you love.</li>
+                    <li><i class="bi bi-check-circle"></i> Get better acquainted with yourself.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    The people in our lives have a massive effect on the quality of our lives. Yet, we often forget this
+                    when we set goals, focusing only on making more money or gaining recognition.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <br>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+
+           
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2 style="font-weight: 800px;
+          font-size: 40px;
+          color: #ffb03b;
+          font-family: 'Architects Daughter', cursive;"> <span>Quotes</span></h2>
+          <p>Motivation is the art of getting people to do what you want them to do because they want to do it.
+          </p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://i.pinimg.com/originals/1d/a7/82/1da78261c84a4f57218e2eceb3f3143c.jpg"
+                class="gallery-lightbox">
+                <img src="https://i.pinimg.com/originals/1d/a7/82/1da78261c84a4f57218e2eceb3f3143c.jpg" alt=""
+                  class="img-fluid" style="height: 250px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://thumbs.dreamstime.com/b/believe-yourself-vector-quote-positive-motivation-quote-love-yourself-vector-quotes-positive-motivation-quote-set-poster-180348712.jpg"
+                class="gallery-lightbox">
+                <img
+                  src="https://thumbs.dreamstime.com/b/believe-yourself-vector-quote-positive-motivation-quote-love-yourself-vector-quotes-positive-motivation-quote-set-poster-180348712.jpg"
+                  alt="" class="img-fluid" style="height:250px; padding-left:60px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://www.incimages.com/uploaded_files/image/1920x1080/getty_506910700_351988.jpg"
+                class="gallery-lightbox">
+                <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_506910700_351988.jpg" alt=""
+                  class="img-fluid" style="height: 250px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://i0.wp.com/freeaddon.com/wallpaper/quotes/thumb444x250-01.jpg" class="gallery-lightbox">
+                <img src="https://i0.wp.com/freeaddon.com/wallpaper/quotes/thumb444x250-01.jpg" alt="" class="img-fluid"
+                  style="height:250px;">
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://www.wishesmsg.com/wp-content/uploads/Motivational-messages-About-Life.jpg"
+                class="gallery-lightbox">
+                <img src="https://www.wishesmsg.com/wp-content/uploads/Motivational-messages-About-Life.jpg" alt=""
+                  class="img-fluid" style="height:250px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://thumbs.dreamstime.com/b/motivational-inspirational-quote-don-t-let-yesterday-take-up-too-much-today-156008623.jpg"
+                class="gallery-lightbox">
+                <img
+                  src="https://thumbs.dreamstime.com/b/motivational-inspirational-quote-don-t-let-yesterday-take-up-too-much-today-156008623.jpg"
+                  alt="" class="img-fluid" style="height: 250px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://quotefancy.com/media/wallpaper/3840x2160/13996-Wayne-W-Dyer-Quote-Be-miserable-Or-motivate-yourself-Whatever-has.jpg"
+                class="gallery-lightbox">
+                <img
+                  src="https://quotefancy.com/media/wallpaper/3840x2160/13996-Wayne-W-Dyer-Quote-Be-miserable-Or-motivate-yourself-Whatever-has.jpg"
+                  alt="" class="img-fluid" style="height:250px;">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmKfIPwgFmu0jwJ1fZcRLSLkMbaj87t3f0A&usqp=CAU"
+                class="gallery-lightbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmKfIPwgFmu0jwJ1fZcRLSLkMbaj87t3f0A&usqp=CAU"
+                  alt="" class="img-fluid" style="height:250px;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 style="font-family: 'Architects Daughter', cursive;">VIVI5</h3>
+      <p>MIND . FITNESS . PLANNERS . DAIRY . RIDDLES</p>
+      
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="/static/mind/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/mind/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/mind/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/mind/vendor/php-email-form/validate.js"></script>
+  <script src="/static/mind/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/mind/script.js"></script>
+
+</body>
+
+</html>

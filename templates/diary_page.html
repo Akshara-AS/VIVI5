@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Diary</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/diary/diary.css">
+
+  
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet"> 
+
+  <!-- Vendor CSS Files -->
+  <link href="static/diary/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/diary/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/diary/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/diary/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/diary/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/diary/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap" rel="stylesheet">
+
+
+  <title>Mood Tracker</title>
+</head>
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="main_home.html">VIVI5</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          
+      
+        </ul>
+    
+  </header><!-- End Header -->
+
+
+  
+
+  <!-- Dashboard Start Here -->
+  <div id="content" class="container">
+    <div class="jumbotron bg-info text-white">
+      <h1 class="display-4">Hello, Madhu!</h1>
+      <hr class="my-4">
+      <p class="lead">Welcome to your daily mood tracker. how do you feel today?</p>
+      <!-- <div class="btn-group" role="group">
+        <button id=" " type="button" class="btn btn-sm btn-light text-info">Very Though</button>
+        <button id=" " type="button" class="btn btn-sm btn-light text-info">Difficult</button>
+        <button id=" " type="button" class="btn btn-sm btn-light text-info">Average</button>
+        <button id=" " type="button" class="btn btn-sm btn-light text-info">Great</button>
+        <button id=" " type="button" class="btn btn-sm btn-light text-info">Amazing</button>
+      </div> -->
+    </div>
+    
+    <div class="card">
+      <div class="card-body">
+        today is: <h4 id="activeDate">31 December 2019</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="left-section col-lg-6">
+        <br>
+        <div class="card mood-block">
+          <div class="card-body">
+            <h4 class="text-center"><span id="moodBlock-month">December</span>'s Mood Blocks </h4>
+            <hr class="my-4">
+
+            <div id="moodBlocks">
+              <div class="justify-content-center" id="gridContainerLabel">
+                <div><span></span></div>
+                <div class="grid-label">Morning</div>
+                <div class="grid-label">Noon</div>
+                <div class="grid-label">Afternoon</div>
+                <div class="grid-label">Evening</div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <section name="moodblockLegends">
+          <br><br>
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div style="display: inline; border: none;" class="col-sm-2 grid-item moodType-5"></div>
+                  <p style="display: inline-block;" class="col-sm-10">Amazing</p>
+                </th>
+                <td id="percentage-4">20%</td>
+                <td id="ratio-4">20 / 100</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div style="display: inline;" class="col-sm-2 grid-item moodType-4"></div>
+                  <p style="display: inline-block;" class="col-sm-10">Great</p>
+                </th>
+                <td id="percentage-3">20%</td>
+                <td id="ratio-3">20 / 100</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div style="display: inline;" class="col-sm-2 grid-item moodType-3"></div>
+                  <p style="display: inline-block;" class="col-sm-10">Average</p>
+                </th>
+                <td id="percentage-2">20%</td>
+                <td id="ratio-2">20 / 100</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div style="display: inline;" class="col-sm-2 grid-item moodType-2"></div>
+                  <p style="display: inline-block;" class="col-sm-10">Difficult</p>
+                </th>
+                <td id="percentage-1">20%</td>
+                <td id="ratio-1">20 / 100</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div style="display: inline;" class="col-sm-2 grid-item moodType-1"></div>
+                  <p style="display: inline-block;" class="col-sm-10">Very Tough</p>
+                </th>
+                <td  id="percentage-0">20%</td>
+                <td id="ratio-0">20 / 100</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      
+      
+      </div>
+      
+      <div class="right-section col-lg-6">
+        <br>
+        <section name="journal">
+          <div class="card">
+            <div class="card-header"><b>Journal</b></div>
+            <div id='journal-card' class="card-body">
+              <!-- start generation here-->
+
+              <!-- until here -->
+            </div>
+          </div>
+          
+          <div id="journalCard" class="collapse">
+            <br>
+            <div class="card">
+              <div class="card-body">
+                <b>New Journal:</b> <span id="newjournal-inputDate">20/05</span>
+                <hr>
+                <form id="form-newJournal">
+                  <div class="form-group">
+                    <label for="input-title">Title</label>
+                    <input required autocomplete="off" type="text" class="form-control" id="input-title" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-journal">Write Something Here</label>
+                    <textarea required class="form-control" id="input-journal" rows="3"></textarea>
+                  </div>
+                  <button id="btn-submit-newJournal" type="submit" class="btn btn-info btn-block">Add new journal entry </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br>
+          <button type="btn-addJournal" class="btn btn-block btn-lg btn-outline-info" data-toggle="collapse" data-target="#journalCard">Write a Journal</button> 
+        </section>
+      </div>
+    
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h4>This year's progress:</h4>
+        <div class="progress" style="height: 3em;">
+            <div id="year-progress" class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0 - check JS</div>
+          </div>
+          <hr class="my-4">
+          <p><span id='remainingDay'>32</span> day remaining until new year</p>
+      </div>
+    </div>
+    <!-- this need to be generated from js -->
+
+    <style>
+      body {
+          height: 100%;
+          width: 100%;
+          background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+ 
+  </style>
+
+  </div>
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="container">
+      <h3>VIVI5</h3>
+      <p>MIND . FITNESS . PLANNERS . DIARY . RIDDLES</p>
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/diary/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/diary/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/diary/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/diary/vendor/php-email-form/validate.js"></script>
+  <script src="static/diary/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/diary/main.js"></script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="static/diary/diary.js"></script>
+</html>

@@ -1,0 +1,641 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>VIVI5</title>
+  <link rel="icon" href="{% static '/images/logo.svg' %}" type="image/x-icon type">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/main_home/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/main_home/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+
+  <link href="{% static '/main_home/styles.css' %}" rel="stylesheet">
+
+
+</head>
+
+
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="{%  url 'home' %}"><i class="fab fa-angellist"></i>VIVI5</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Features</a></li>
+
+          <li><a class="nav-link scrollto" href="#events">Highlights</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">
+              {% if loggedin %}
+              Log out
+              {% else %}
+              Sign Up
+              {% endif %}
+            </a></li>
+
+          <li><a class="nav-link scrollto" href="#team">Developers</a></li>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100"
+      autoplay="" loop="" playsinline="" muted="">
+      <div class="row">
+      </div>
+      <div class="col-lg-8">
+        <h1><span>VIVI5</span></h1>
+        <h4>MIND . FITNESS . PLANNERS . DIARY . RIDDLES</h4>
+      </div>
+    </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b0561229-934d-43eb-b85d-6262167a1e69/d5anfpm-367bae43-c97a-442a-95e5-37333baecf4a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IwNTYxMjI5LTkzNGQtNDNlYi1iODVkLTYyNjIxNjdhMWU2OVwvZDVhbmZwbS0zNjdiYWU0My1jOTdhLTQ0MmEtOTVlNS0zNzMzM2JhZWNmNGEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9dLR95_d8u8w4t7UwyrKPrIx0V7WpVf8XURrSti_eNc"
+                alt="" style="opacity:0.8;">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>About Us</h3>
+            <p><br>
+              Our application is designed to motivate , keep track of your fitness , manage your plans,
+              provides a personal space and brainstorming riddles to refresh your mind.<br><br>
+              Improve your life by sharing motivational, inspiration, eye opening ideas, positivity, productivity,
+              self-care strategies and more.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Helps you become healthier, happier & confident by motivating
+                ourselves.</li>
+              <li><i class="bi bi-check-circle"></i> Fitness tips to stay active and healthy all through your life.
+              </li>
+              <li><i class="bi bi-check-circle"></i> Free planners for organizing your daily tasks, notes, reminders and
+                more.</li>
+              <li><i class="bi bi-check-circle"></i> Free online diary to protect your memories.</li>
+              <li><i class="bi bi-check-circle"></i> A collection of brainstorming riddles.</li>
+            </ul>
+            <p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <br>
+          <p>Features</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <a href="{% url 'mindhome' %}">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>MIND</h4>
+                <p>Listen to new speeches, interviews & playlists.
+                  Discover life changing advice curated by top content creators.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <a href="{% url 'fitnesshome' %}">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>02</span>
+                <h4>FITNESS</h4>
+                <p>Give yourself a boost with these health tips.
+                  Follow these quick and easy health tip to stay active & Healthy all day.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <a href="{% url 'plannerhome' %}">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>03</span>
+                <h4>PLANNERS</h4>
+                <p>Syncs seamlessly.
+                  All-in-one planner & to-do list app for getting things done.
+                  Grocery list & shopping list.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br>
+
+        <div class="row justify-content-around">
+
+          <div class="col-lg-4 mt-4">
+            <a href="{% url 'diaryhome' %}">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>04</span>
+                <h4>DIARY</h4>
+                <p>Safe & private diary.
+                  Customizable, easy & beautiful journaling app.
+                  Stickers & mood tracking diary care above your mood.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <a href="{% url 'riddlehome' %}">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>05</span>
+                <h4>RIDDLES</h4>
+                <p>Many riddles in one game.
+                  Useful brainstroming riddles.
+                  Stress free & relaxing game.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+
+          <p>Highlights</p>
+        </div>
+
+        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://data.whicdn.com/images/67670448/original.gif" class="img-fluid" alt="" style="opacity: 0.8; padding-top:50px; max-width:85%;
+                  height:auto; padding-left:50px; opacity:0.8;">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>MIND</h3>
+                  <div class="price">
+                    <p><span>Motivate yourself !</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Motivation becomes the fuel for the life which helps you achieve your dreams. It's a powerful, yet
+                    tricky beast. We provide best ideas and
+                    speeches of eminent speakers on how to get and stay motivated.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Discover life changing advice curated by the top
+                      content creators.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Listen to new speeches, interviews & playlists.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Access playlist covering anxiety, focus, stress and more.
+                    </li>
+                  </ul>
+                  <p>
+                    Nobody can stay motivated until he or she regularly does something to recharge himself with
+                    motivation.
+                    Successful people have plenty of motivational sources here and there. Whenever they find some time,
+                    they
+                    nourish themselves with motivation.<br>Do you do it?
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://cdn.dribbble.com/users/530738/screenshots/1979160/dd.gif" class="img-fluid" alt=""
+                    style="opacity: 0.8; padding-top:50px; max-width:85%;
+                  height:auto; padding-left:50px; opacity:0.8;">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>FITNESS</h3>
+                  <div class="price">
+                    <p><span> Trim Your Body !</span></p>
+                  </div>
+                  <p class="fst-italic">
+
+                    Staying healthy physically can help you stay healthy emotionally too. If you're eating the right
+                    food and keeping fit, your body will be strong and help you to cope with stress and also fight
+                    illness. We have desinged fitness page for different types of body type.
+
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Included simple and easy to follow plans.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Simply following the given tips regularly would make a huge
+                      difference.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> A healthy eating plan gives your body the nutrients it needs
+                      every day while staying within your
+                      daily calorie goal for weight loss.
+                    </li>
+                  </ul>
+                  <p>
+                    We have designed separate pages for gaining weight (for people who are underweight) and losing
+                    weight(for people with overweight).
+                    And we have provided simple tips that all age group of people can follow. So cheer up and begin!!
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://cdn.dribbble.com/users/374833/screenshots/1605422/index_gif_3.gif" class="img-fluid"
+                    alt="" style="opacity: 0.8; padding-top:50px; max-width:100%;
+                  height:420px; padding-left:50px; opacity:0.8;">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>PLANNERS</h3>
+                  <div class="price">
+                    <p><span>Time matters ! Don't miss anything.</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Planning can greatly reduce your stress quotient. Proper planning gives you the peace of mind of
+                    knowing that you have formulated a feasible plan of action and that your goals are attainable.
+                    Our planners provides you calender and to-do lists to efficient your work.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Prioritize. Manage tasks effectively.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Helps you to Delegate.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> See Avalibility, Quickly using calendar.
+                    </li>
+                  </ul>
+                  <p>
+                    Planning also helps you to be prepared for obstacles because part of the planning process is
+                    creating a contingency pan for unexpected problems.Planning your daily and weekly activities will
+                    clearly illustrate whether or not you are staying on schedule.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://i.pinimg.com/originals/2e/bc/91/2ebc9107580d5b785b78779d5824b2da.gif"
+                    class="img-fluid" alt="" style="opacity: 0.8; padding-top:40px; max-width:100%;
+                  height:440px;width:540px ; padding-left:50px; opacity:0.8;">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>PERSONAL DIARY</h3>
+                  <div class="price">
+                    <p><span>I'm your secret friend !</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Our Personal Diary application provides a private place where you can keep your thoughts, feelings
+                    and opinions on everything from work to school and everywhere in between.
+
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i>Helps you organize your journal entries from the past in the
+                      easiest way.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i>A minimalist, uncluttered interface makes journaling a
+                      pleasant experience.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i>You can customize the background colors of your entries.
+                    </li>
+                  </ul>
+                  <p>
+                    If you’re just getting started, maybe you haven’t decided what you want to write about, and that’s
+                    fine. That is what we are here for – to help you with all those moments of writer’s block you may be
+                    having. Our tips can help guide you and inspire you. Let’s begin !
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img
+                    src="https://25.media.tumblr.com/e6684c17b371e29e4dcf32da1b9b020a/tumblr_mu0borXME11qbuesvo2_r1_1280.gif"
+                    class="img-fluid" alt="" style="opacity: 0.8; padding-top:40px; max-width:100%;
+                  height:430px;width:540px;  padding-left:50px; opacity:0.8;">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>RIDDLES</h3>
+                  <div class="price">
+                    <p><span></span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Young minds need to be fostered with something that gives them an opportunity to think over. Experts
+                    recommend riddles as something that helps to improve thinking ability and creativity. Riddles are
+                    fun
+                    and also provide an opportunity to learn.They help to start reasoning and give
+                    rise to geniuses as we had in past and the present and those brains which are to conquer the world
+                    in
+                    near future.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Enhance critical thinking and problem-solving skills.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Increases vocabulary
+                      skills.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Interpret comprehensions with ease.
+                    </li>
+                  </ul>
+                  <p>
+                    It helps in working out Laughter medicine which relaxes and calms our mind and soul. We can
+                    find hilarious and sometimes brain-teasing questions twisted inside a riddle.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Contact Section ======= -->
+    {% if not loggedin %}
+    <section id="contact" class="contact ">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Sign Up</h2>
+          <p>Create your own account</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <form action="{% url 'login' %}" method="post" role="form" class="php-email-form" style="padding-left:500px">
+
+            {% csrf_token %}
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="User Name" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 form-group mt-3">
+                <input type="text" class="form-control" name="password" id="subject" placeholder="Password" required>
+              </div>
+            </div>
+
+            <div class="text-center" style="padding-right:500px;"><button type="submit">LOG IN</button></div>
+
+          </form>
+        </div>
+
+        <div class="col">
+          <form action="{% url 'home' %}" method="post" role="form" class="php-email-form" style="padding-left:500px">
+
+            {%csrf_token %}
+
+
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="User Name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mt-3">
+                <input type="text" class="form-control" name="password" id="subject" placeholder="Password" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mt-3">
+                <input type="text" class="form-control" name="re_password" id="subject" placeholder="Re-enter password"
+                  required>
+              </div>
+            </div><br>
+            <div class="text-center" style="padding-right:500px;"><button type="submit">SUMBIT</button></div>
+
+          </form>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+    {% endif %}
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Developers</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100" style="opacity: 0.8;">
+              <div class="pic"><img src="static/main_home/Img/WhatsApp Image 2021-06-08 at 20.00.42.jpeg"
+                  class="img-fluid" alt=""></div>
+              <div class="member-info" style="color: black;">
+                <h4>Sanjjushri Varshini R</h4>
+                <span>B.Tech Artificial Intelligence and Data Science</span>
+                <p>Chennai Institute of Technology</p>
+                <div class="social">
+                  <a href="mailto:sanjjushrivarshini@gmail.com"><i class="fa fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/sanjjushri-varshini-r-aa33551ba/"> <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/Sanjjushri"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200" style="opacity: 0.8;">
+              <div class="pic"><img src="static/main_home/Img/WhatsApp Image 2021-06-08 at 20.00.36.jpeg"
+                  class="img-fluid" alt=""></div>
+              <div class="member-info" style="color: black;">
+                <h4>Madhushree T</h4>
+                <span>B.Tech Artificial Intelligence and Data Science</span>
+                <p>Chennai Institute of Technology</p>
+                <div class="social">
+                  <a href="mailto:madhushreethangavel@gmail.com"><i class="fa fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/madhushree-t-211389200"><i class="fa fa-linkedin"></i> </a>
+                  <a href="https://github.com/Madhushree124"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300" style="opacity: 0.8;">
+              <div class="pic"><img src="static/main_home/Img/WhatsApp Image 2021-06-08 at 20.11.53.jpeg"
+                  class="img-fluid" alt=""></div>
+              <div class="member-info" style="color: black;">
+                <h4>Akshara A S</h4>
+                <span>B.Tech Artificial Intelligence and Data Science</span>
+                <p>Chennai Institute of Technology</p>
+                <div class="social">
+                  <a href="mailto:aksharaas22103@gmail.com"><i class="fa fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/akshara-as-2922la/"> <i class="fa fa-linkedin"></i> </a>
+                  <a href="https://github.com/Akshara-AS"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400" style="opacity: 0.8;">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info" style="color: black;">
+                <h4>Lekha Shree S</h4>
+                <span>B.Tech Computer Science and Business System</span>
+                <p>Chennai Institute of Technology</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-envelope"></i></a>
+                  <a href=""> <i class="fa fa-linkedin"></i> </a>
+                  <a href="https://github.com/LEHKA-LEHA"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3><a href="{%  url 'home' %}">VIVI5</a></h3>
+              <p>MIND . FITNESS . PLANNERS . DIARY . RIDDLES</p>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#events">Highlights</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Features</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Mind</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Fitness</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Planners</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Dairy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Riddles</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Feedback</h4>
+            <p>Any queries or any improvements about our application</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Submit">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <script src="{% static '/main_home/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/main_home/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{% static '/main_home/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/main_home/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/main_home/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/main_home/script.js' %}"></script>
+
+</body>
+
+</html>
