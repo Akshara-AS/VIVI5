@@ -277,7 +277,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover>a {
-  color: #d9ba85;
+  color: ##d9ba85;
 }
 
 .navbar .dropdown ul {
@@ -1170,7 +1170,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: url("https://cdn.wallpapersafari.com/73/18/eBxlRq.jpg") center center no-repeat;
+  background: url("https://img5.goodfon.com/wallpaper/nbig/5/18/chiornyi-fon-tiomnyi-fon-listva-zelenaia.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1198,7 +1198,7 @@ section {
 }
 
 .team .member:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .team .member .member-info {
