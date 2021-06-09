@@ -8,7 +8,9 @@
        3. PLANNERS - *CALENDER *TODO
        4. DIARY 
        5. RIDDLES   
-      
+
+   TECH STACK
+       |
   Client  :   Python             
               Html              
               Css              
