@@ -1,4 +1,3 @@
-
 -------------- VIVI5 -----------------
 
       VIVI5 HOME  
@@ -9,4 +8,20 @@
        3. PLANNERS - *CALENDER *TODO
        4. DIARY 
        5. RIDDLES   
-      
+
+   TECH STACK
+       |
+  Client  :   Python             
+              Html              
+              Css              
+              Js
+              jQuery
+              Bootstrap
+  
+  API      :  django
+
+  Backend  :  sqlite
+
+  Infra    :  Docker 
+
+  Services :  Github
